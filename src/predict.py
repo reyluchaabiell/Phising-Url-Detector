@@ -3,7 +3,7 @@ import os
 import sys
 import pandas as pd
 
-# Tambahkan path agar bisa import extract_features
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from src.feature_extraction import extract_features
 
