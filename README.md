@@ -8,27 +8,24 @@ Proyek ini bertujuan membangun sistem deteksi URL phishing berbasis Machine Lear
 
 📁 Struktur Proyek
 
+```text
 phising-url-detector/
-│
-├── data/                 # Data asli dan hasil preprocessing
-│   ├── raw/              # Dataset mentah (download dari Kaggle)
+├── data/                    # Data asli dan hasil preprocessing
+│   ├── raw/                 # Dataset mentah (Kaggle)
 │   │   └── new_data_urls.csv
-│   └── processed/        # Data setelah preprocessing
+│   └── processed/           # Data setelah preprocessing
 │       └── processed_urls.csv
-│
-├── models/               # Model ML tersimpan
+├── models/                  # Model ML tersimpan
 │   └── phishing_url_model.pkl
-│
-├── src/                  # Kode sumber aplikasi
-│   ├── download.py       # Unduh dataset dari Kaggle
-│   ├── preprocess.py     # Bersihkan & ekstrak fitur awal
-│   ├── feature_extraction.py # Ekstraksi fitur URL
-│   ├── train.py          # Latih model dan simpan hasil
-│   └── predict.py        # Fungsi prediksi URL
-│
-├── app.py                # Antarmuka Streamlit untuk deteksi interaktif
-├── requirements.txt      # Daftar pustaka Python yang dibutuhkan
-└── README.md             # Dokumentasi (file ini)
+├── src/                     # Kode sumber aplikasi
+│   ├── download.py          # Unduh dataset dari Kaggle
+│   ├── preprocess.py        # Bersihkan & ekstrak fitur awal
+│   ├── feature_extraction.py# Ekstraksi fitur URL
+│   ├── train.py             # Latih model dan simpan hasil
+│   └── predict.py           # Fungsi prediksi URL
+├── app.py                   # Antarmuka Streamlit untuk deteksi interaktif
+├── requirements.txt         # Daftar pustaka Python yang dibutuhkan
+└── README.md                # Dokumentasi (file ini)
 
 🚀 Langkah Instalasi
 
